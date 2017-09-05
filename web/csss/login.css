@@ -1,0 +1,183 @@
+body{
+    background: wheat; 
+}
+
+.login-img{
+    width: 100%;
+    height: 130px;
+}
+
+.full-with{
+    width: 100%;
+}
+
+.imagenF{
+    background: url("http://media.istockphoto.com/vectors/education-background-with-books-in-flat-design-style-vector-id506236787") no-repeat center;
+    height: 200px;
+}
+
+.colapse-create{
+    padding-bottom: 20px !important;
+}
+
+.page{
+    min-width: 350px;    
+}
+
+.letras{
+    font-size: 15px;
+    text-align: right;
+}
+
+.but_login{
+    margin-top: 10px;
+    margin-right:  0px;
+}
+
+.no-marg{
+    margin: 0px !important;
+}
+
+.loader {
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid green;
+    border-bottom: 7px solid green;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.ocultar{
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.card-block{
+    padding-bottom: 0px !important;
+}
+
+.alg-center{
+    margin-top: 20px;
+    text-align: center;
+}
+.alg-ri{
+    text-align: right;
+}
+
+.group-reg  input {
+    height: 30px;
+}
+
+.group-reg  select {
+    height: 30px !important;
+    padding: 0;
+}
+
+.group-reg{
+    margin-bottom: 0px;   
+}
+
+.group-reg  > label {
+    font-size: 13px;
+    margin-bottom: 0px !important;
+}
+.no-margin-b{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.col-reg{
+    margin-bottom: 30px;
+}
+
+.fondo-color{
+    background: gainsboro;
+    margin-bottom: 20px;
+}
+
+.but_reg{
+    margin-bottom: 10px;
+}
+
+.change-pass{
+    font-style: oblique;
+}
+
+.mar-bot{
+    margin-bottom: 10px;
+}
+
+.card{
+    border-radius: 0px !important;
+}
+
+.form-control{
+    border-radius: 0px !important;
+}
+.new-form-control{
+    border-radius: .25rem !important;
+    height: 30px;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.ui-autocomplete > li > div {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.ui-state-hover,
+.ui-state-active,
+.ui-state-focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
