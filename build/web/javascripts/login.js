@@ -29,6 +29,7 @@ $(document).ready(function () {
             success: function (r) {
                 if (r.cod === 1) {
                     alert("Registro correcto");
+                    window.reload();
                 } else {
                     alert("Ocurrió un error");
                 }
@@ -52,6 +53,7 @@ $(document).ready(function () {
             success: function (r) {
                 if (r.cod === 1) {
                     alert("Login correcto");
+                    window.location.href = "principal.html";
                 } else if (r.cod === 2) {
                     alert("Credenciales incorrectas");
                 } else {
