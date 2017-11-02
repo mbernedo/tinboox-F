@@ -52,7 +52,7 @@ $(document).ready(function () {
             data: JSON.stringify(obj),
             success: function (r) {
                 if (r.cod === 1) {
-                    alert("Login correcto");
+                    localStorage.setItem("usuario", r.idUser);
                     window.location.href = "principal.html";
                 } else if (r.cod === 2) {
                     alert("Credenciales incorrectas");
