@@ -7,6 +7,7 @@
 var id = localStorage.getItem("usuario");
 
 $(document).ready(function () {
+
     var jqxhr = $.get(URL + "getBooks?idUser=" + id).done(function (data) {
         if (data.cod === 1) {
             var arr = data.data;
