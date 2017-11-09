@@ -16,7 +16,7 @@ $(document).ready(function () {
                         "<th>" + item.idBook + "</th>" +
                         "<td>" + item.titulo + "</td>" +
                         "<td>" + item.genero + "</td>" +
-                        "<td><button class='btn btn-success'>Si</button></td>" +
+                        "<td><button class='btn btn-success'>Like</button></td>" +
                         "</tr>");
             });
         }

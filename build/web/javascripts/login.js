@@ -40,6 +40,8 @@ $(document).ready(function () {
     $("#login").click(function () {
         var user = $("#userLog").val();
         var pwd = $("#passLog").val();
+        console.log(user);
+        console.log(pwd);
         var obj = {
             usuario: user,
             password: pwd
