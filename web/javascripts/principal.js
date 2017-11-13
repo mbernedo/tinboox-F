@@ -16,11 +16,35 @@ $(document).ready(function () {
                         "<th>" + item.idBook + "</th>" +
                         "<td>" + item.titulo + "</td>" +
                         "<td>" + item.genero + "</td>" +
-                        "<td><button class='btn btn-success'>Like</button></td>" +
+                        "<td><button class='btn validar btn-success' id='" + item.idBook + "'>Like</button></td>" +
                         "</tr>");
+            });
+            $(".validar").bind("click", function () {
+                var libro = $(this).attr("id");
+                var obj = {
+                    usuario: id,
+                    libro: libro
+                };
+                $.ajax({
+                    type: "POST",
+                    url: URL + "valorar",
+                    processData: false,
+                    contentType: 'application/json',
+                    data: JSON.stringify(obj),
+                    success: function (r) {
+                        if (r.cod === 1) {
+                            alert("Correcto");
+                            location.reload();
+                        } else {
+                            alert("Ocurrió un error");
+                        }
+                    }
+                });
             });
         }
     }).fail(function () {
         console.log("nel");
     });
+
+
 });

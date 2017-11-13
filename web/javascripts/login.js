@@ -29,7 +29,7 @@ $(document).ready(function () {
             success: function (r) {
                 if (r.cod === 1) {
                     alert("Registro correcto");
-                    window.reload();
+                    location.reload();
                 } else {
                     alert("Ocurrió un error");
                 }
