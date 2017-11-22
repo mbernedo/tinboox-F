@@ -7,6 +7,10 @@ body{
     height: 130px;
 }
 
+.ocultar{
+    display: none;
+}
+
 .full-with{
     width: 100%;
 }

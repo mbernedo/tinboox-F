@@ -6,12 +6,16 @@
 var id = localStorage.getItem("usuario");
 
 $(document).ready(function () {
+
+    $("#libros").attr("href", "./libros.html?idUsuario=" + id);
+
     var jqxhr = $.get(URL + "kmean").done(function (data) {
         var jqxhr = $.get(URL + "getClusters?idUser=" + id).done(function (data) {
             if (data.cod === 1) {
                 var arr = data.data;
                 arr.forEach(function (item, index) {
                     $("#cluster").append("<tr>" +
+                            "<th><a href='libros.html?idUsuario=" + item.idusuario + "' target='_blank'>Ver</a></th>" +
                             "<th>" + item.nombre + "</th>" +
                             "<td>" + item.apellido + "</td>" +
                             "<td>" + item.telefono + "</td>" +
