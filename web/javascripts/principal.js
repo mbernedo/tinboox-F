@@ -17,6 +17,9 @@ $(document).ready(function () {
                 $("#books").append("<tr>" +
                         "<td>" + item.titulo + "</td>" +
                         "<td>" + item.genero + "</td>" +
+                        "<td>" +item.numpag + "</td>"+
+                        "<td>" +item.editorial + "</td>"+
+                        "<td>" +item.autor + "</td>"+
                         "<td><button class='btn validar btn-success' id='" + item.idBook + "'>Like</button></td>" +
                         "</tr>");
             });

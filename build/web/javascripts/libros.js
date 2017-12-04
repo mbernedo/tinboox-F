@@ -15,6 +15,9 @@ $(document).ready(function () {
                 $("#books").append("<tr>" +
                         "<th>" + item.titulo + "</th>" +
                         "<td>" + item.genero + "</td>" +
+                        "<td>" + item.numpag + "</td>" +
+                        "<td>" + item.editorial + "</td>" +
+                        "<td>" + item.autor + "</td>" +
                         "</tr>");
             });
         }
