@@ -8,8 +8,6 @@ var id = localStorage.getItem("usuario");
 
 $(document).ready(function () {
 
-    $("#libros").attr("href", "./libros.html?idUsuario=" + id);
-
     var jqxhr = $.get(URL + "getBooks?idUser=" + id).done(function (data) {
         if (data.cod === 1) {
             var arr = data.data;
@@ -17,9 +15,9 @@ $(document).ready(function () {
                 $("#books").append("<tr>" +
                         "<td>" + item.titulo + "</td>" +
                         "<td>" + item.genero + "</td>" +
-                        "<td>" +item.numpag + "</td>"+
-                        "<td>" +item.editorial + "</td>"+
-                        "<td>" +item.autor + "</td>"+
+                        "<td>" + item.numpag + "</td>" +
+                        "<td>" + item.editorial + "</td>" +
+                        "<td>" + item.autor + "</td>" +
                         "<td><button class='btn validar btn-success' id='" + item.idBook + "'>Like</button></td>" +
                         "</tr>");
             });
