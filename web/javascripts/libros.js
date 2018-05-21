@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var id = localStorage.getItem("usuario");
 
 $(document).ready(function () {
+    var param = window.location.search.substr(1);
+    var val = param.split("=");
+    var id = val[1];
     var jqxhr = $.get(URL + "getMyBooks?idusuario=" + id).done(function (data) {
         if (data.cod === 1) {
             var arr = data.data;

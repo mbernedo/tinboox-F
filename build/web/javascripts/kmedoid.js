@@ -7,6 +7,8 @@ var id = localStorage.getItem("usuario");
 
 $(document).ready(function () {
 
+    $("#libros").attr("href", "./libros.html?idUsuario=" + id);
+
     var jqxhr = $.get(URL + "kmean").done(function (data) {
         var jqxhr = $.get(URL + "getClusters?tipo=kmedoid&idUser=" + id).done(function (data) {
             if (data.cod === 1) {
