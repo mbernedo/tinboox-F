@@ -18,7 +18,6 @@ $(document).ready(function () {
                             "<th><a href='libros.html?idUsuario=" + item.idusuario + "' target='_blank'>Ver</a></th>" +
                             "<th>" + item.nombre + "</th>" +
                             "<td>" + item.apellido + "</td>" +
-                            "<td>" + item.telefono + "</td>" +
                             "</tr>");
                 });
             }
